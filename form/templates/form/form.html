@@ -73,7 +73,7 @@
             padding: 30px;
             margin: auto;
             border: solid 1px rgb(197, 197, 197);
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0 5px 5px -1px rgba(0,0,0,.2);
             text-align: left;
             font-weight: 600;
@@ -81,6 +81,7 @@
 
         a {
             text-decoration: none;
+            color: white;
         }
 
         .contact-form {
@@ -158,10 +159,6 @@
             padding: 20px;
         }
 
-        small {
-            font-size: 12px;
-        }
-
         #profile-pic {
             width: 50px;
             margin: 0 auto 0 auto;
@@ -169,7 +166,7 @@
   
         #navbar {
             width: 100%;
-            background-color: #ffffffbb;
+            background-color: #ffffffe3;
             position: fixed;
             top: 0;
             left: 0;
@@ -227,7 +224,6 @@
             align-items: center;
             color: #23598b;
             transition: all .5s ease-in-out;
-          
         }
 
         .heading h1 {
@@ -236,7 +232,8 @@
 
         /*============= projects ===============*/
         #intro {
-        background-image: linear-gradient(to bottom, #264c94, #266eec);
+        background-image: url("https://i.ibb.co/6ZmGvSd/blue-background-024.jpg");
+        background-size: cover;
         padding: 60px 0 80px 0;
         align-items: center;
         display: flex;
@@ -261,6 +258,15 @@
         .prostavka {
             height: 30px;
         }
+
+        .btn-primary {
+            background-color: #007dca !important;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #006aac !important;
+        }
+
 
 
         /*============= Counter ===============*/
@@ -311,10 +317,12 @@
         }
         .footer {
             margin-top: 50px;
-            background-image: linear-gradient(to bottom,#266eec, #264c94);
+            background-image: url("https://i.ibb.co/s65jmzf/blue-background-025.jpg");
+            background-size: cover;
             color: white;
             padding: 15px 0 5px 0;
         }
+
 
         @media (max-width: 700px) {
             #video {
@@ -369,7 +377,7 @@
 
         @media (max-width: 280px) {
             .nav-content .logo img {
-                width: 100%;
+                width: 140%;
             }
             #welcome {
                 margin-top: 50px;
@@ -399,9 +407,10 @@
                     <a href=""><img src="https://i.ibb.co/0KfqGyD/logo4.png" alt="logo"></a>
                 </div>
                 <ul>
-                    <li><a href="#intro">About</a></li>
-                    <li><a href="#get-in-touch">Contact</a></li>
                     <li><a href=tel:7202823578>Call</a></li>
+                    <li><a href="#get-in-touch">Contact</a></li>
+                    <li><a href="login">Training</a></li>
+                    
                 </ul>
             </div>
         </div>
@@ -578,9 +587,6 @@
 
 
 
-
-
-
 <section class="counters">
 <div class="container container-counter" data-aos="fade-up">
 
@@ -599,7 +605,7 @@
     <div>
         <i class="fa-solid fa-thumbs-up fa-3x"></i>
         <div class="counter">120,000</div>
-        <p>and moreclients recommend our services</p>
+        <p>and more clients recommend our services</p>
     </div>
 
     <div>
@@ -610,14 +616,6 @@
 
 </div>
 </section>
-
-
-
-
-
-
-
-
 
 
 
@@ -649,10 +647,15 @@
     </div>
     <div class="question" data-aos="fade-up">
     <p>Have a question but can’t find an answer?</p> 
-    <a class="btn btn-primary" href="tel:7202823578" role="button">Give Us a Call</a>
+    <a class="btn btn-primary btn btn-primaryy" href="tel:7202823578" role="button">Give Us a Call</a>
     </div>
+
+
+
     <div class="footer">
-        <p><strong>BMH Corp. LLC</strong> <br><strong>Address:</strong> 13140 E Mississippi Ave, Aurora, CO 80012 <br><strong>Phone:</strong> (720) 282-3578</p>
+        <div>
+            <p><strong>BMH Corp. LLC</strong> <br><strong>Address:</strong> 13140 E Mississippi Ave, Aurora, CO 80012 <br><strong>Phone:</strong> (720) 282-3578</p>
+        </div>
     </div>
 </section>
 

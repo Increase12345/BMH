@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
 
 def form(request):
     if request.method == "POST":
@@ -30,3 +32,16 @@ def form(request):
 
 def ty(request):
     return render(request, "form/ty.html")
+
+
+class CustomLoginView(LoginView):
+    template_name = 'form/login.html'
+    fields = '__all__'
+    redirect_authenticated_user = True
+
+    def get_success_url(self):
+        return ('content_user')
+
+
+def conten(request):
+    return render(request, "form/content_user.html")

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-67sb&=-g6pkojd@bpak-qxaxod9oulhg$_3rrinoz0e3e7c&eq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,12 +43,20 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django_session_timeout.middleware.SessionTimeoutMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+SESSION_EXPIRE_SECONDS = 3600
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = 60
+SESSION_TIMEOUT_REDIRECT = '/login'
+
+
 
 ROOT_URLCONF = 'formEm.urls'
 
