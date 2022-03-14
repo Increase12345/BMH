@@ -129,7 +129,7 @@
 
         .card {
             display: inline-flex;
-            background-color: #f9f8fc;
+            background-color: #ffffff;
             color: #23598b;           
             width: 100%;
             height: 100%;
@@ -166,7 +166,7 @@
   
         #navbar {
             width: 100%;
-            background-color: #ffffffe3;
+            background-color: #ffffff;
             position: fixed;
             top: 0;
             left: 0;
@@ -220,7 +220,8 @@
         /*============= Welcoming ===============*/
         #welcome{
             width: 100%;
-            margin-top: 90px;
+            margin-top: 50px;
+            margin-bottom: 70px;
             align-items: center;
             color: #23598b;
             transition: all .5s ease-in-out;
@@ -230,29 +231,87 @@
             font-family: 'Kalam', cursive;
         }
 
-        /*============= projects ===============*/
-        #intro {
-        background-image: url("https://i.ibb.co/6ZmGvSd/blue-background-024.jpg");
-        background-size: cover;
-        padding: 60px 0 80px 0;
-        align-items: center;
-        display: flex;
-        color: white;
-        margin-top: 70px;
+        .what_can {
+            margin-top: 50px;
         }
 
-        .intro-con {
+        /*============= projects ===============*/
+        #intro {
+            background-image: url("https://i.postimg.cc/B6hS8TNb/Mod.jpg");
+            background-size: cover;
+        padding: 10px 0 20px 0;
+        align-items: center;
+        display: flex;
+        color: #ffffff;
+        padding-top: 90px;
+        padding-bottom: 65;
+        }
+
+        #our_mission {
             color: #23598b;
-            margin-top: 40px;
+            padding: 30px 0 60px 0;
+        }
+
+        #our_mission img {
+            width: 100%;
+        }
+
+        #our_mission hr {
+            width: 125px;
+        }
+
+        #our_technology {
+            color: #23598b;
+            padding: 50px 0 70px 0;
+        }
+
+        #day_care {
+            display: flex;
+            color: #23598b;
+            background-size: cover;
+            padding: 45px 0 50px 0;
+        }
+
+        .day_care_div {
+            display: flex;
+            text-align: left;
+        }
+
+        #day_care hr {
+            width: 160px;
+        }
+
+        #day_care img {
+            max-width: 570px;
+        }
+
+        #transportation {
+            display: flex;
+            color: #23598b;
+            background-size: cover;
+            padding: 60px 0 25px 0;
+        }
+
+        #transportation img {
+            max-width: 570px;
+        }
+
+        .transportation_div {
+            display: flex;
+            text-align: left;
+        }
+
+        .transportation_div hr {
+            width: 255px;
         }
 
         #profile-pic-con {
-            width: 100%;
+            max-width: 100%;
             box-shadow: 0 5px 5px -1px rgba(0,0,0,.2);
         }
 
         hr {
-            width: 80%;
+            width: 100%;
         }
 
         .prostavka {
@@ -280,10 +339,7 @@
         .counters {
             /*background: #f9f8fc;*/
             color: #23598b;
-            padding: 40px 20px;
-           
-            border-bottom: 1px dashed #23598b;
-            margin-top: 20px;
+            padding: 30px 0 30px 0;
         }
 
         .counters .container-counter {
@@ -316,11 +372,38 @@
             color: #23598b;
         }
         .footer {
+            display: flex;
             margin-top: 50px;
             background-image: url("https://i.ibb.co/s65jmzf/blue-background-025.jpg");
             background-size: cover;
             color: white;
             padding: 15px 0 5px 0;
+            box-shadow: 0 -5px 10px rgba(0,0,0,.2);
+        }
+
+        .footer_con {
+            display: flex;
+            max-width: 1200px;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .footer_text {
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .footer_text a:hover {
+            color: #e4881f;
+        }
+
+        .footer_map {
+            padding: 0 0 5px 10px;
         }
 
 
@@ -351,8 +434,10 @@
                 padding: 0;
             }
             #welcome {
-                margin-top: 50px;
+                padding-bottom: 20px;
+                margin: 0;
             }
+
             .counters .container-counter {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -363,6 +448,42 @@
             .counters .counter {
                 font-size: 28px;
             }
+
+            #intro {
+                height: auto;
+                padding-top: 70px;
+                padding-bottom: 0;
+            }
+
+            #transportation {
+            display: block;
+            padding-bottom: 15px;
+        }
+
+        .transportation_div {
+            display: block;
+            text-align: left;
+            margin-top: 0px;
+            padding-top: 0;
+        }
+
+        #transportation img {
+            max-width: 100%;
+        }
+
+        #day_care {
+            display: block;
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .day_care_div {
+            display: block;
+        }
+
+        #day_care img {
+            max-width: 100%;
+        }
         }
 
         @media (max-width: 900px) {
@@ -373,6 +494,17 @@
             #welcome {
                 margin-top: 80px;
             }
+
+            .day_care_div {
+            display: block;
+        }
+        .transportation_div {
+            display: block;
+        }
+
+        .transportation_div img {
+            margin-left: auto;
+        }
         }
 
         @media (max-width: 280px) {
@@ -417,173 +549,252 @@
     </nav>
 
 
-<section id="welcome" class="weclome-sec">
-    <div class="container">
- <!--      <span style="color: #e4881f;"><h1>13140 E Mississippi Ave, Aurora, CO 80012<br></h1></span>   --> 
 
 
-
-
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-
-
-
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="15000">
-            <video autoplay loop muted class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9">
-                <source src="{% static '/ho6.mp4' %}" type="video/mp4">
-            </video>
-            <div class="carousel-caption d-md-block">
-              <h5><b>BMH-Corp. LLC</b></h5>
-              <p>Providing service with honesty, reliability, and respect.</p>
-              <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
+    <section id="intro">
+        <div class="container">
+        <span style="color: white;"><h1>Welcome to BMH-Corp Home Care of Aurora</h1></span>
+        <span style="color: #e4881f;"><h1>CARE THAT MOVES YOU</h1></span>
+        <br>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://i.ibb.co/9vM8Wwg/prob-1.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9"/>
-            <div class="carousel-caption d-md-block">
-                <h5><b>Professionalism</b></h5>
-                <p>Providing service with honesty, reliability, and respect.</p>
-              <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://i.ibb.co/Bj0WRpv/prob-2.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9"/>
-            <div class="carousel-caption d-md-block">
-              <h5><b>Experience</b></h5>
-              <p>Masters of their craft, based on years of practical experience and education.</p>
-              <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://i.ibb.co/HKbjfJg/prob-3.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9"/>
-            <div class="carousel-caption d-md-block">
-              <h5><b>Reputation</b></h5>
-              <p>A history of delighted customers and outstanding service.</p>
-              <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
-            </div>
-          </div>
-
-      </div>
-
-
-
       
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <br>
-    <br>
-    <h1>Let’s Start Talking About Living</h1>
-    <h1>What We Can Do For You</h1>
-
-    </div>
-
-    <div class="row">
-        <div class="col-md-3" data-aos="fade-up">
-          <div class="card card-body border-gray">
-            <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/community.svg?la=en&hash=937D0E1E1E0C5305A6773A7E6AD11A69" alt="pic1" />
-            
-            <h5><b>Companion Care</b></h5>
-            <p>
-                Help with light housekeeping, meal preparation, socialization…
-            </p>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="15000">
+                  <video autoplay loop muted class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9">
+                      <source src="{% static '/ho6.mp4' %}" type="video/mp4">
+                  </video>
+                  <div class="carousel-caption d-md-block">
+                    <h5><b>BMH-Corp. LLC</b></h5>
+                    <p>Providing service with honesty, reliability, and respect.</p>
+                    <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <img src="https://i.postimg.cc/BvVyhF2L/prob-1.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9"/>
+                  <div class="carousel-caption d-md-block">
+                      <h5><b>Professionalism</b></h5>
+                      <p>Providing service with honesty, reliability, and respect.</p>
+                    <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <img src="https://i.postimg.cc/3JFcsVgH/prob-2.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9"/>
+                  <div class="carousel-caption d-md-block">
+                    <h5><b>Experience</b></h5>
+                    <p>Masters of their craft, based on years of practical experience and education.</p>
+                    <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <img src="https://i.postimg.cc/zf6twr1T/prob-3.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover; opacity: 0.9"/>
+                  <div class="carousel-caption d-md-block">
+                    <h5><b>Reputation</b></h5>
+                    <p>A history of delighted customers and outstanding service.</p>
+                    <a class="btn btn-primary but-add" href="tel:7202823578" role="button">Call Us</a>
+                  </div>
+                </div>
+      
+            </div>
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-        </div>
-
-       
-            <div class="col-md-3" data-aos="fade-up">
-              <div class="card card-body border-gray">
-                <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/toothbrush.svg?la=en&hash=A21CEE0C228C864112FEE0D1F81C6B8D" alt="pic1" />
-                
-                <h5><b>Personal Care</b></h5>
-                <p>
-                    There for physical assistance, hygiene, mobility...
-                </p>        
-            </div>
-            </div>
-
-            <div class="col-md-3" data-aos="fade-up">
-                <div class="card card-body border-gray">
-                  <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/nursing.svg?la=en&hash=1D23D0CF01A322EFC05505001A08FEE1" alt="pic1" />
-                  
-                  <h5><b>Nursing Care</b></h5>
-                  <p>
-                    In-home medical care, wound care, ostomy care...
-                  </p>        
-              </div>
-              </div>
-
-              <div class="col-md-3" data-aos="fade-up">
-                <div class="card card-body border-gray">
-                  <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/holdinghand.svg?la=en&hash=8D92D09C3A56BC0A42ABC7417F80F536" alt="pic1" />
-               
-                  <h5><b>Specialty Care</b></h5>
-                  <p>
-                    Support for conditions like Alzheimer’s, diabetes, Parkinson’s...
-                  </p>        
-              </div>
-              </div>
-
-            
-            
-    
-</section>
-
-<section id="intro">
-    <div class="container" data-aos="fade-up">
-    <h1>Welcome to BMH-Corp Home Care of Denver: Up to 24-hour home care</h1>
-    <span style="color: #e4881f;"><h1>CARE THAT MOVES YOU</h1></span>
-    <center><hr></center>
-    <p>Life moves in one direction – forward. No matter what each person’s circumstances are, BMH-Corp. Home Care steps in with effective, comforting, life-affirming care that moves people, and their loved ones, emotionally and physically forward. From personal assistance and companionship to live-in and end-of-life comfort care, we provide the extra help needed to propel everyone safely and confidently to their fullest potential.</p>
-    <iframe id="video" src="https://www.youtube.com/embed/lTv53IhSwKk" frameborder="0" allowfullscreen width="800px" height="450px"></iframe>
-    </div>
-</section>
-
-
-
-
-<div class="intro-con">
-
-<div class="row">
-    <div class="col-md-12" data-aos="fade-up">
-      <div class="card-body border-gray">
-        <h1>Our Mission</h1>
+          <br> <br>
+          <center><hr></center>
+        <p>Life moves in one direction – forward. No matter what each person’s circumstances are, BMH-Corp. Home Care steps in with effective, comforting, life-affirming care that moves people, and their loved ones, emotionally and physically forward. From personal assistance and companionship to live-in and end-of-life comfort care, we provide the extra help needed to propel everyone safely and confidently to their fullest potential.</p>
         <center><hr></center>
-        <p>Our mission is to be the premier partner of choice for families seeking personalized, dignified care for their aging loved ones. We champion the well-being of our clients, deliver peace of mind to their families, and instill pride of purpose in our care teams, each and every day.</p>
-        <img id="profile-pic-con" src="https://i.ibb.co/GPNbtR8/1-home-care-banner.jpg" alt="pic1" />
-      </div>
+
+
+        <div class="what_can">
+            <div class="container">
+                <span style="color: #ffffff;"> <h1>Let's Start Talking About Living</h1></span>
+            <span style="color: #e4881f;"><h1>What We Can Do For You</h1></span>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-up">
+                  <div class="card card-body border-gray">
+                    <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/community.svg?la=en&hash=937D0E1E1E0C5305A6773A7E6AD11A69" alt="pic1" />
+                    
+                    <h5><b>Companion Care</b></h5>
+                    <p>
+                        Help with light housekeeping, meal preparation, socialization…
+                    </p>
+                  </div>
+                </div>
+        
+                    <div class="col-md-3" data-aos="fade-up">
+                      <div class="card card-body border-gray">
+                        <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/toothbrush.svg?la=en&hash=A21CEE0C228C864112FEE0D1F81C6B8D" alt="pic1" />
+                        
+                        <h5><b>Personal Care</b></h5>
+                        <p>There for physical assistance, hygiene, mobility...</p>        
+                    </div>
+                    </div>
+        
+                    <div class="col-md-3" data-aos="fade-up">
+                        <div class="card card-body border-gray">
+                          <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/nursing.svg?la=en&hash=1D23D0CF01A322EFC05505001A08FEE1" alt="pic1" />
+                          
+                          <h5><b>In-Home Support Services</b></h5>
+                          <p>Health maintenance activities, support for activities of daily living...</p>        
+                      </div>
+                      </div>
+        
+                      <div class="col-md-3" data-aos="fade-up">
+                        <div class="card card-body border-gray">
+                          <img id="profile-pic" src="https://www.rightathome.net/-/media/rahv2/global/icons/holdinghand.svg?la=en&hash=8D92D09C3A56BC0A42ABC7417F80F536" alt="pic1" />
+                       
+                          <h5><b>Specialty Care</b></h5>
+                          <p>Support for conditions like Alzheimer’s, diabetes, Parkinson’s...</p>        
+                      </div>
+                      </div>
+                    </div>
+
+
+<br><br>
     </div>
+    </section>
 
-<div class="prostavka">
 
+
+
+
+
+
+
+<section id="transportation">
+    <div class="container">
+        <div class="transportation_div">
+    <div data-aos="flip-up">
+        <center><img id="profile-pic-con" src="https://i.ibb.co/df481qv/222-4656-MD-RGB.jpg" alt="pic1" /></center>
+        <br>
+    </div>
+    <div class="container"  data-aos="fade-up">
+        <center><span style="color: #e4881f;"><h1>Transportation Services</h1></span>
+    <hr></center>
+    <p>We will provide you with more than a driver. A professional caregiver will bring you safely to your destination and help you when you get there. You can also ask for help getting ready for an appointment, having a Touching Hearts at Home Carer with you during your appointment, drive you home, get you settled in, and stay with you for as long as needed.</p>
+    <p>Here are a few of the scenarios we can help you with:</p>
+    <ul>
+        <li>
+            Escort to medical appointments
+        </li>
+        <li>
+            Airport, departure/arrival
+        </li>
+        <li>
+            Visit friends, family, and social events
+        </li>
+        <li>
+            Theatre, concerts, and sporting events
+        </li>
+        <li>
+            Errands such as a prescription pick-up
+        </li>
+        <li>
+            Appointments such as alterations and wardrobe fittings
+        </li>
+        <li>
+            Grocery shopping
+        </li>
+        <li>
+            Hair and nail appointments
+        </li>
+        <li>
+            Parks and other areas to walk!
+        </li>
+    </ul>
 </div>
-    
-        <div class="col-md-12" data-aos="fade-up">
-          <div class="card-body border-gray">
-            <h1>Our Technology Combined With Our Experience Ensures Better Quality and Consistency.</h1>
-            <center><hr></center>
-            <p>We were founded 15 years ago in Aurora, Colorado–the heart of Mountains.<br>So it only made sense to integrate technology and ingenuity with our years of experience, by providing our caregivers with a proprietary mobile app.2 It helps us stay connected with our caregivers and team members every day to provide the updates they need, as well as maintain a level of service.</p>
-            <img id="profile-pic-con" src="https://i.ibb.co/PCCkNT7/3-Group-309-2-min.png" alt="pic1" />
-          </div>
-        </div>
+</div>
+</div>
+</section>
+
+
+
+
+<center><hr></center>
+
+
+
+
+
+<section id="day_care">
+    <div class="container">
+        <div class="day_care_div">
+    <div class="container" data-aos="fade-up">
+        <center><span style="color: #e4881f;"><h1>Adult Day Care</h1></span>
+    <hr></center>
+    <p>BMH-Corp. Day Care provides adult day care services (including specialized habilitation and supported community connections) to Denver area residents. Alpine Adult Day Care is a Medicaid certified provider and a Program Approved Service Agency (PASA), serving the needs of the elderly, disabled and those with developmental and intellectual disabilities.</p>
+    <ul>
+        <li>
+            Spacious Aurora Location
+        </li>
+        <li>
+            Modern, Open-space Facility
+        </li>
+        <li>
+            Fully licensed restaurant style kitchen
+        </li>
+        <li>
+            Entertainment included!
+        </li>
+        <li>
+            Wide variety of daily activities
+        </li>
+        <li>
+            Therapeutic recreation activities
+        </li>
+        <li>
+            Birthday parties
+        </li>
+        <li>
+            Daily local trips
+        </li>
+        <li>
+            Weekly / bi-weekly excursions
+        </li>
+    </ul>
+</div>
+<div data-aos="flip-up">
+    <center><img id="profile-pic-con" src="https://i.ibb.co/Btw3XPP/111-Adult-day-care-games.jpg" alt="pic1" /></center>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<center><hr></center>
+
+
+
+<section id="our_mission">
+    <div class="container" data-aos="fade-up">
+        <span style="color: #e4881f;"><h1>Our Mission</h1></span>
+    <center><hr></center>
+    <p>Our mission is to be the premier partner of choice for families seeking personalized, dignified care for their aging loved ones. We champion the well-being of our clients, deliver peace of mind to their families, and instill pride of purpose in our care teams, each and every day.</p>
+    <img id="profile-pic-con" src="https://i.ibb.co/PCCkNT7/3-Group-309-2-min.png" alt="pic1" />
     </div>
+</section>
+
+
+
 
 
 
@@ -616,6 +827,9 @@
 
 </div>
 </section>
+
+
+<center><hr></center>
 
 
 
@@ -653,10 +867,19 @@
 
 
     <div class="footer">
-        <div>
-            <p><strong>BMH Corp. LLC</strong> <br><strong>Address:</strong> 13140 E Mississippi Ave, Aurora, CO 80012 <br><strong>Phone:</strong> (720) 282-3578</p>
+        <div class="footer_con">
+        <div class="footer_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.947414448343!2d-104.83951518462581!3d39.69588627945528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c62b63116aee3%3A0x6adf454677f40647!2sBMH%20Corp.%20LLC!5e0!3m2!1sen!2sus!4v1646289172161!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer_text">
+                <span style="font-size: 17px; color: #e4881f;"><p><strong>BMH Corp. LLC</strong></p> </span>
+                <center><hr></center>
+                <p><strong>Home Care<br></strong><a href=https://goo.gl/maps/2P3HF6MQcJXQLiGh6 target="_blank">1210 S Parker Rd, Denver, CO 80231</a><br>
+                <strong>Day Care<br></strong><a href=https://goo.gl/maps/R7DMaXuGmtDtmntZ6 target="_blank">13140 E Mississippi Ave, Aurora, CO 80012</a><br>
+                <strong>Phone<br></strong><a href=tel:7202823578>(720) 282-3578</a></p>
         </div>
     </div>
+</div>
 </section>
 
 
@@ -682,3 +905,28 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!--
+<p>Here are a few ways we can help you with:</p>
+<p>
+    Grocery shopping<br>
+    Airport, departure/arrival<br>
+    Hair and nail appointments<br>
+    Parks and other areas to walk!<br>
+    Escort to medical appointments<br>
+    Theatre, concerts, and sporting events<br>
+    Errands such as a prescription pick-up<br>
+    Visit friends, family, and social events<br>
+    Appointments such as alterations and wardrobe fittings<br>
+    
+</p>
+
+-->
